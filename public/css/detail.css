@@ -1,0 +1,165 @@
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Màu nền */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.box_product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info_product {
+  background-color: #fff; /* Màu nền cho thông tin sản phẩm */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+.name h3 {
+  color: #333; /* Màu văn bản cho tên sản phẩm */
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #ff5722; /* Màu văn bản cho giá sản phẩm */
+  font-size: 20px;
+}
+
+.topping {
+  margin-top: 20px;
+  color: #333; /* Màu văn bản cho tiêu đề Topping */
+}
+
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Bo góc ảnh */
+  margin-right: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked + label img {
+  border-color: #ff5722; /* Màu khung ảnh khi được chọn */
+}
+
+.size {
+  margin-top: 20px;
+}
+
+.size span {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ff5722; /* Màu nền cho size */
+  color: #fff; /* Màu văn bản cho size */
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.size span:hover {
+  background-color: #f44336; /* Màu nền khi di chuột vào */
+}
+
+label[for="quantity"] {
+  margin-top: 20px;
+  display: block;
+  color: #333; /* Màu văn bản cho tiêu đề số lượng */
+  font-size: 18px;
+}
+
+.detail_sl {
+  width: 50px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.cart_detail {
+  background-color: #ff5722; /* Màu nền cho nút thêm vào giỏ */
+  color: #fff; /* Màu văn bản cho nút thêm vào giỏ */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cart_detail:hover {
+  background-color: #f44336; 
+}
+.box_product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; 
+  object-fit: cover; 
+  object-position: center;
+}
+
+.box_product img:hover {
+  transform: scale(1.1); 
+}
+
+
+.go-to-cart {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.go-to-cart a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff5722; /* Màu nền cho nút */
+  color: #fff; /* Màu văn bản cho nút */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển động */
+}
+
+.go-to-cart a:hover {
+  background-color: #f44336; /* Màu nền khi di chuột vào */
+}
+
+.go-to-cart img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}

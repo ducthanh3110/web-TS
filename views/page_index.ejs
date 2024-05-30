@@ -1,0 +1,56 @@
+
+
+
+
+<%- include('./templates/header.ejs') %>
+        <section class="slide__body">
+            <div class="container">
+                <div class="container_slide">
+                    <div class="slides">
+                        <div class="item">
+                            <img src="https://www.venuscinema.vn/uploaded/slideshow/banner-tra-sua-02.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://t3.ftcdn.net/jpg/04/64/30/76/360_F_464307620_CYWfA00cdwwtYPxXMfFpbTjVjaFYmP93.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://phuclong.com.vn/uploads/page/96859c993fbc5a-bannerkm.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="next"><i class="fas fa-arrow-right"></i></div>
+                    <div class="prev"><i class="fas fa-arrow-left"></i></div>
+                </div>
+            </div>
+        </section>
+        <!--  end banner -->
+        <!-- Products   -->
+        <section>
+            <div id="container_products">
+                <div class="productsBanChay">
+                    <h3>Sản Phẩm Bán Chạy</h3>
+                </div>
+              
+                <ul class="products">
+                    <% dsSP.forEach(sp => { %>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="/detail/<%=sp.id%>" class="product-1">
+                                    <img src="public/img/<%=sp.image%>" alt="">
+                                </a>
+                                <a href="/detail/<%=sp.id%>" class="buy-now">Mua Ngay</a>
+                            </div>
+                            <div class="product-thongtin"><%=sp.name%></a>
+                                <a href="/detail/<%=sp.id%>" class="poduct-name"></a>
+                                <div class="product-price"><span><%=sp.price %></span>_<del><%=sp.price %></del></div>
+                            </div>           
+                        </div>
+                    </li>
+                    <% }); %>
+                </ul>
+            
+            </div>
+    
+          
+        </section>
+        <%- include('./templates/footer.ejs') %>

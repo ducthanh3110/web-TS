@@ -1,0 +1,396 @@
+/* -----------------------------thanh meu------------- */
+
+body{
+    font-size: 15px;
+    line-height: 1.15;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.khung{
+    width: 100%;
+    height: auto;
+}
+.menu{
+    width: 100%;
+    height:auto;
+    background-color:#6c757d ;
+    backdrop-filter: blur(20px);
+    /* position:fixed; */
+    position: sticky;
+    top: 0px;
+    background-attachment: fixed;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+.tenshop{
+    font-size: 30px;
+    position: absolute;
+    top:0px;
+    left:20%;
+}
+.tenshop a{
+    text-decoration: none;
+    color:#5AA8F2;
+    font-weight: bold;
+}
+
+.logo img{
+    width: auto;
+    height:105px;
+    background-color:#6c757d ;
+}
+
+
+.tren{
+    width:  100%;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+    .tren ul{
+        margin-top: 0px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .tren ul li{
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 400;
+    }
+    .tren ul li:hover {
+            color:red;
+        }
+        .tren ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+          
+
+            
+        }
+        /* -------------------ul li---- */
+        .tren ul ul{
+            position:absolute;
+            display: none;
+            right: 0;
+            /* background-color: greenyellow; */
+            margin-right: 300px;            
+        }
+        .tren ul ul li a{
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+        }
+        .tren ul ul li{
+            text-decoration: none;
+        }
+        .tren ul li:hover ul{
+            display: block;
+        }
+        .tren ul ul li a:hover{
+            box-shadow: 0 2px 0 0 currentColor;
+        }
+        /* ------------.>>>>----- */
+        .up ul li img{
+            vertical-align: middle;
+           
+        }
+        .logo a{
+            padding-right: 50px ;
+        }
+        .logo{
+            float: left;
+            /* background-color: black; */
+        }
+        .duoi{
+            width:70%;
+            height:50px;
+            margin: 0 auto;
+        }
+        .duoi .tim{
+            position: absolute;
+            top:70px;
+            right:20%;
+            outline: none ;
+
+            
+        }
+        .duoi .tim button{
+            outline: none ;
+            width: 25px;
+            height: 30px;
+        }
+        .duoi .tim input{
+            outline: none ;
+            border: 1px solid red ;
+            box-shadow: 5 5 0 -2;
+
+        }
+        .duoi .bxs-cart{
+            position: absolute;
+            font-size: 50px;
+            top:70px;
+            right:150px;
+            color: rgb(245, 225, 239);
+        }
+        
+            .tim{
+            display: inline-block;
+            width: 350px;
+            height: 40px;
+            background-color: #fff;
+            margin-left: 90px;
+            border-radius: 5px;
+            margin-top: 10px;
+            }
+            .tim input{
+                width: 300px;
+                height: 38px;
+                border: 1px;
+                padding-left: 15px;
+                border-radius: 5px;
+               
+            }
+            .tim button{
+                border: 0px;
+                /* background-color:#6c757d; */
+                border-radius: 5px;
+                width: 20px;
+                height: 30px;
+            }
+            .tim button img{
+                width: 20px;
+                height: auto;
+                vertical-align: middle;
+            }
+            .vvv{
+                display: inline-block;
+                float: right;
+                margin-right: 100px;
+            }
+  /* ---------------------header------------------           */
+  .header{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    vertical-align: middle;
+    overflow: clip;
+}
+.header img{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    width: 900px;
+    height: 400px;
+}
+.khungsp{
+    width: 100%;
+    margin: 0 auto;
+}
+.head{
+    text-align: center;
+    margin: 40px 0px;
+    font-weight: 600;
+}
+    h2{
+        font-size: 18px;
+            color:black;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            display: inline-block;
+            background-color: #6c757d;
+            /* background-color: white; */
+            font-weight: bold;
+            text-decoration: underline;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 1px;
+            width: 15%;
+            padding: 10px;
+            margin: 4px 0px;
+            margin-bottom: 0;
+            font-size: px;
+            font-weight: 400;
+            line-height: 80%;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            user-select: none;
+    }
+
+ul.anh{
+
+     list-style: none;
+     display: flex;
+     /* flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-between; */
+     height: auto;
+     padding: 0 40px 0 40px;
+     
+     flex-basis: 23%; /* Điều chỉnh chiều rộng của mỗi sản phẩm, đảm bảo chúng không quá lớn hoặc quá nhỏ */
+     margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+}
+.sanpham{
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ul.anh li{
+    flex-basis: 20%;
+    padding-left: 5px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/* ------------hh--------- */
+ul.anh li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+ul.anh li .product-top .product-thumb{
+    display: inline;
+}
+ul.anh li:hover .product-top .product-thumb img{
+    filter:opacity(80%);
+}
+ul.anh li .product-top .product-thumb img{
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+}
+ul.anh li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.anh li .product-top a.dat-hang{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color:#9400D3;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -39px;
+    width: 100%; 
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+
+}
+
+ul.anh li :hover a.dat-hang{
+    bottom: 0px;
+}
+.giamgia{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #000;
+    padding: 1px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* -------------------------------------------- */
+
+
+/* -------------------------------------------- */
+ul.anh li .info{
+    padding: 10px 0px;  
+    text-align: center;
+    background-color: #fff ;
+    border-radius:  0 0 10px 10px;
+}
+ul.anh li .info a{
+    display: block;
+    text-decoration: none;
+}
+ul.anh li .info a.ma{
+    font-size: 11px;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    padding: 3px 0px;
+}
+ul.anh li .info a.ma1{
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.anh li .info .tien{
+    color: #111;
+    padding: 3px 0px;
+    font-weight: 600;
+}
+/* -------gia------ */
+.info span{
+    font-weight: bold;
+    color:red;
+
+}
+.info del{
+    text-decoration: line-through;
+    color: rgba(red, green, blue, alpha);
+}
+.footer{
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    background-color:#6c757d;
+    position: relative;
+    top: 30px;
+    color: #1565c0;
+}
+.foot{
+    float: left;
+    width: 20%;
+    min-height: 100px;
+    margin-left: 1% ;
+    margin-right: 1%;
+   
+
+}
+.footerbox3{
+    float: left;
+    width: 21%;
+    min-height: 100px;
+    margin-left: 1% ;
+    margin-right: 1%;
+    font-family: sans-serif;
+}
+.footerbox4{
+    float: left;
+    width: 28%;
+    min-height: 100px;
+    margin-left: 1% ;
+    margin-right: 1%;
+    font-family: sans-serif;
+    letter-spacing: 5px ;
+    
+}
+
+.foot ul li{
+    list-style-type: none;
+   
+}
+.foot ul li a{ 
+    text-decoration: none;
+    color: white;
+}
+.foot ul li a:hover{
+    color: red;
+}
+.footerbox2 ul li{
+    list-style-type: none;
+}
+
+

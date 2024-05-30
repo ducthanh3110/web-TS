@@ -1,0 +1,46 @@
+<%- include('./templates/header.ejs') %>
+  
+
+<div class="admin-layout">
+ <ul id="admin-menu">
+        <li><a href="/admin">DANH MỤC </a></li>
+        <li><a href="/admin/product">Quản Lý Sản Phẩm </a></li>
+        <li><a href="/admin/user">Quản Lý Tài Khoản </a></li>
+        <li><a href="/admin/order">Quản Lý Đơn Hàng </a></li>
+       </ul>
+<div>
+    <h1 class="main-layout">TRANG QUẢN LÝ SẢN PHẨM </h1>
+    <button><a class="themsp" href="/admin/product/add">add product</a></button>
+  
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mã Sản Phẩm </th>
+                <th>Ảnh</th>
+                <th>Tên</th>
+                <th>Loại</th>
+                <th>Thao Tác</th>
+                <th>TRẠNG THÁI</th>
+
+            </tr>
+        </thead>
+        <tbody>
+         <% dsSP.forEach(sp => { %>
+            <tr>
+                <td><%=sp.id%></td>
+                <td><img src="/public/img/<%=sp.image%>" width="50" alt=""></td>
+                <td><%=sp.name%></td>
+                <td><%=sp.price%></td>
+                <td><%=sp.type%></td>
+                <td>
+                    <a href="/admin/product/<%=sp.id%>/update">Edit</a>
+                    <a href="/admin/product/<%=sp.id%>/delete">X</a>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+      
+    </table>
+</div>
+    </div>
+        <!-- <%- include('./templates/footer') %> -->

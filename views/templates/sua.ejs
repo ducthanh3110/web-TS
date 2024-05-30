@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %> | tra sua tra xanh </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+    </style>
+    <link rel="stylesheet" href="/public/css/style.css"> 
+    <link rel="stylesheet" href="slidshow.css">
+    <link rel="stylesheet" href="/public/css/detail.css">
+    <link rel="stylesheet" href="/public/css/cart.css">
+    <link rel="stylesheet" href="/public/css/admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+<body>
+    <div class="khung">
+        <div class="menu">
+            <div class="tren">
+                <ul>
+                    <li class="logo"><a href=""><img src="/public/img/logo_coffe_house-removebg-preview.png" alt=""></a></li>
+                    <li><a href="/"><img src="" alt="">TRANG CHỦ</a></li>
+                    <li><a href="http://">SẢN PHẨM</a></li>
+                   
+                    <li><a href="">TÀI KHOẢN</a> 
+                        <% if(user.id==-1) {%>
+                            <ul>
+                                <li><a href="login">Đăng nhập</a></li>
+                                <li><a href="register">Đăng ký</a></li>
+                            </ul>
+                            <% } else { %>
+                                <li><a href=""></a>HELLO, <%=user.name %></li>
+                                <% if(user.role=='Admin') {%>
+                                <li><a href="/admin" style="color: red;">QUAN TRI</a></li>
+                                <% } %>
+                                <li><a href="/logout">EXIT</a></li>
+                            <% } %>
+                        </li>
+                        <li><a href="/admin"><i class='bx bx-user'></i></a></li>
+                    </ul>
+                </div>
+                <div class="tenshop">  
+                    <a href="trangchu.html"><h1></h1></a>
+                </div>
+                
+                <div class="duoi">
+                    <div class="tim">
+                        <input type="text" name="" placeholder="Tìm kiếm trà sữa">
+                        <button class="search"> <i class='bx bx-search-alt-2'></i> </button>
+                    </div>               
+                        <a href="/product_cart"><i class='bx bxs-cart' ></i></a> 
+                </div>
+            </div>
+                    <!-- <div id="slideshow">
+                <img src="images/liveshow1.jpg" alt="" id="hinh">
+                <i class='bx bx-left-arrow-alt left' onclick="left()"></i>
+                <i class='bx bx-right-arrow-alt right' onclick="right()"></i>
+    
+            </div> --> -->
+
+
+            <!-- ////////////////// -->
+            <!-- <div class="footer">       
+    <div class="footerbox1 foot">
+        <h3 style="color: white;margin-left: 12%;">Chăm sóc khách hàng</h3>
+        <ul>
+            <li><a href="">Trung Tâm Trợ Giúp</a></li> 
+            <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+            <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+            <li><a href="">Chăm Sóc Khách Hàng</a></li>
+            <li><a href="">Chính Sách Bảo Hành</a></li>    <hr>            
+        </ul>
+    </div>
+    <div class="footerbox2 foot">
+        <h3 style="color:white;margin-left: 12%;">Giới thiệu</h3>
+        <ul>
+            <li><a href="">Về chúng tôi</a></li>
+            <li><a href="">Điều Khoản</a></li>
+            <li><a href="">Chính Sách Bảo Mật</a></li>     <hr>            
+        </ul>
+    </div>
+    <div class="footerbox3 foot">
+        <h3 style="color:white;margin-left: 12%;">Follow</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/">FaceBok: Đức Thành</a></li>
+            <li>
+                <div class="i"><i class="fab fa-google"></i>    Google</div>
+                <a href="http://127.0.0.1:5501/trangchu.html">Instagram: pino</a>
+            </li>
+            <li>
+                <div class="go"><i class="fab fa-facebook"></i>    FaceBook</div>
+                <a href="">Hotline & Chat trực tuyến (24/7)</a>
+            </li> 
+                    
+        </ul>
+    </div>
+    <div class="footerbox4 foot">
+        <h3 style="color:white;margin-left: 12%;">Địa chỉ</h3>
+        <ul>
+            <li><a href="">Store1: 21/5 Trường Sơn, phường 04, Q.Tân Bình, TP.HCM</a></li>
+            <li><a href="">Store2: 21/5 Trường Sơn, phường 04, Q.Tân Bình, TP.HCM</a></li>
+            <li><a href="">Store3: 21/5 Trường Sơn, phường 04, Q.Tân Bình, TP.HCM</a></li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
+<script src="slishow.js"></script> -->
+
+<!-- ////////////////// -->
+<!-- <%- include('./templates/header.ejs') %>
+        <div class="header">
+            <img src="/public/img/bannercff.webp" alt=""> 
+        </div>
+        <div class="khungsp">
+            <div class="kk">
+                <div class="head">
+                    <h2> Nước Mới nhất</h2>
+                </div>
+                <ul class="anh">
+                    <li>
+                        <%  dsSP.forEach(sp => { %>
+                            <div class="sanpham">
+                                <div class="product-top">
+                                    <a href="/detail/<%=sp.id%>" class="product-thumb">
+                                        <img src="public/img/<%=sp.image%>" alt="">
+                                    </a>
+                                    <a href="giohang.html" class="dat-hang">Mua Ngay</a>
+                                    <div class="giamgia">-31%</div>
+                                </div>
+                                <div class="info">
+                                    <a href="" class="ma"><%=sp.name %></a>
+                                    <a href="" class="ma1">DSW TEE DAVIES ORIGINAL</a>
+                                    <div class="tien"><span><%=sp.price %></span>_<del>$</del></div>
+                                    <a href="/detail/<%=sp.id%>">Mua Liền</a>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+        <%- include('./templates/footer') %> -->

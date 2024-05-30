@@ -1,0 +1,188 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    color: #0d4e8a;
+}
+
+
+td img {
+    width: 50px; /* Adjust the width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+    vertical-align: middle; /* Aligns image vertically with text */
+}
+
+
+td a {
+    color: #ff0000; /* Bright red color for the action link */
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: bold; /* Makes the link text bold */
+    font-size:smaller;
+}
+
+td a:hover {
+    text-decoration: underline; /* Underlines the link on hover for better interaction feedback */
+}
+
+/* Additional styling for the product details to enhance readability */
+td strong {
+    display: block; /* Makes the product name stand out on its own line */
+    margin-bottom: 5px; /* Adds some space between the product name and its variants/options */
+}
+
+td p {
+    margin: 2px 0; /* Reduces the space between the product options for a tighter look */
+    color: #666; /* Dark gray color for the product options, making them slightly less prominent than the product name */
+}
+
+/* Styling for the total price and quantity */
+td {
+    vertical-align: middle; /* Aligns the content in the middle of the cell */
+    text-decoration: none;
+    text-align: center;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* /////////////////// form dang nhap , dang ky////// */
+.LOGIN {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* This makes sure that padding does not increase the width */
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+div[style="color: red;"] {
+    color: #dc3545; /* Override inline style */
+    text-align: center;
+    margin-bottom: 20px;
+}
+th{
+    text-align: center;
+   font-weight: bold;
+   font-style: oblique;
+
+}
+/* // form dang nhap dang ky moi//// */
+.loginnhap{
+    height: 320px;
+    width: 350px;
+    border: 1px rgb(211, 101, 101) solid;
+    background-color: #848b8b;
+    margin-left: 500px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: #000000;
+    font-family: sans-serif;
+}
+input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px rgb(167, 159, 159) solid;
+}
+button{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(164, 210, 224);
+}
+
+.login button:hover{
+    background-color: red;
+}
+.login input{
+    width: 100%;
+}
+input:focus{
+    box-shadow: 0px 0px 9px rgb(104, 5, 134);
+}
+.loginnhap .with button{
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.loginnhap .with button:hover{
+    background-color: red;
+}
+.from{
+    margin-top: 150px;
+    float: left;
+    height: 350px;
+    width: 100%;
+
+}
+/* ////// */

@@ -1,0 +1,32 @@
+<%- include('./templates/header.ejs') %>
+  
+
+<div class="admin-layout">
+ <ul id="admin-menu">
+        <li><a href="/admin">DANH MỤC </a></li>
+        <li><a href="/admin/product">Quản Lý Sản Phẩm </a></li>
+        <li><a href="/admin/user">Quản Lý Tài Khoản </a></li>
+        <li><a href="/admin/order">Quản Lý Đơn Hàng </a></li>
+       </ul>
+<div>
+    <h1 class="main-layout">CẬP NHẬT SẢN PHẨM #<%=product.id%> </h1>
+
+  <form  method="post">
+    <label for="name">Tên sản phẩm</label>
+    <input type="text" name="name" id="name" value="<%=product.name%>">
+    <br>
+    <label for="price">Giá</label>
+    <input type="number" name="price" id="price" value="<%=product.price%>">
+    <br>
+    <label for="type">Loại </label>
+    <select name="type" id="type">
+        <option value="drink" <%=(product.type=='drink')?'selected':''%>>Đồ Uống</option>
+        <option value="topping" <%=(product.type=='topping')?'selected':''%>>Topping</option>
+    </select>
+    <br>
+    <button type="submit">Cập Nhật</button>q
+  </form> 
+ 
+</div>
+    </div>
+        <!-- <%- include('./templates/footer') %> -->

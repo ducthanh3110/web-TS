@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title %> | THE COFFEE HOUSE 
+    </title>
+    <link rel="stylesheet" href="/public/css/hao.css">
+    <link rel="stylesheet" href="/public/css/admin.css">
+    <link rel="stylesheet" href="/public/css/cart.css">
+    <link rel="stylesheet" href="/public/css/order_detail.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/03bca92048.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="https://gongcha.com.vn/wp-content/themes/theme/favicon.ico" />
+</head>
+<body>
+
+    <div class="boxheader">
+
+   
+    <header>
+        <div class="container">
+            <div class="content__header">
+                <div class="logo__header">
+                    <img src="/public/img/gongcha.png" alt="" width="70px">
+                </div>
+                <div class="menu__header">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Trang chủ</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Sản phẩm</a></li>
+                            <li><a href="/product_cart">Cart</a></li>
+                        <% if (user.id==-1) {%>
+                            <li><a href="/login">Đăng nhập</a></li>
+                            <li><a href="/register">Đăng ký</a></li>
+                        <%} else { %>
+                            <!-- <li><a href="#"><%= user.name %></a></li> -->
+                              
+                            <li><a href="" style="color:aqua;"><%= user.name %></a></li>    
+                            <% if(user.role=='Admin') { %>
+                              
+                            <% } %>
+                            <li><a class="Exit" href="/logout">EXIT</a></li>
+                        <% } %>
+        
+                        </ul>
+                        
+                   
+                    </nav>
+                </div>
+                <div class="card__head">
+                    <a href="/admin"> <i class='bx bx-user'></i></a>
+  
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

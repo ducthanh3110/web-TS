@@ -1,0 +1,314 @@
+{
+  "products": [
+    {
+      "id": "872",
+      "name": "adsadsa",
+      "image": "tranchau.jpg",
+      "type": "topping",
+      "price": "75000",
+      "topping": [],
+      "quantity": 0
+    },
+    {
+      "id": "123",
+      "name": "Hạt sen",
+      "image": "hatsen.jpg",
+      "type": "topping",
+      "price": 55000
+    },
+    {
+      "id": "834",
+      "name": "CloudTea Trà Xanh Tây Bắc",
+      "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+      "type": "drink",
+      "price": 69000
+    },
+    {
+      "id": "777",
+      "name": "CloudTea Oolong Berry",
+      "image": "1700837685_tra-sua-oolong-berry-ly-thuy-tinh_400x400.jpg",
+      "type": "drink",
+      "price": 69000
+    },
+    {
+      "id": "994",
+      "name": "Trà Sữa Oolong BLao",
+      "image": "1697442155_ts-oolong-blao_400x400.jpg",
+      "type": "drink",
+      "price": 39000
+    },
+    {
+      "id": "345",
+      "name": "CloudTea Trà Xanh Tây Bắc",
+      "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+      "type": "drink",
+      "price": 69000
+    },
+    {
+      "id": "6",
+      "name": "Thạch Cà Phê ",
+      "image": "caphe.jpg",
+      "type": "topping",
+      "price": 55000
+    },
+    {
+      "id": "7",
+      "name": "Đào Miếng",
+      "image": "daomieng.jpg",
+      "type": "topping",
+      "price": 55000
+    },
+    {
+      "id": "8",
+      "name": "Kem Phô Mai Macchiato",
+      "image": "phomai.jpg",
+      "type": "topping",
+      "price": 55000
+    },
+    {
+      "id": "9",
+      "name": "Trái Nhãn",
+      "image": "trainhan.jpg",
+      "type": "topping",
+      "price": 55000
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "ĐỨC THÀNH ",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "name": "ducthanh",
+      "email": "thanh@gmail.com",
+      "password": "456",
+      "role": "User"
+    },
+    {
+      "id": "88e0",
+      "email": "dqwd@123",
+      "password": "999",
+      "name": "aaaaaa",
+      "role": "User"
+    },
+    {
+      "id": "bbc3",
+      "email": "thanhaaa@gmail.com",
+      "password": "000",
+      "name": "thanhdeptrai",
+      "role": "User"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1731",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "9",
+              "name": "Trái Nhãn",
+              "image": "trainhan.jpg",
+              "type": "topping",
+              "price": 55000
+            }
+          ],
+          "quantity": 2,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        }
+      ],
+      "idUser": "1",
+      "total": 179000,
+      "date": "2024-04-07 18:51:18",
+      "status": "shipping"
+    },
+    {
+      "id": "e199",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "6",
+              "name": "Thạch Cà Phê ",
+              "image": "caphe.jpg",
+              "type": "topping",
+              "price": 55000
+            }
+          ],
+          "quantity": 2,
+          "name": "CloudTea Oolong Berry",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837685_tra-sua-oolong-berry-ly-thuy-tinh_400x400.jpg",
+          "id": "777"
+        }
+      ],
+      "idUser": "1",
+      "total": 179000,
+      "date": "2024-04-07 18:52:32",
+      "status": "shipping"
+    },
+    {
+      "id": "be07",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "123",
+              "name": "Hạt sen",
+              "image": "hatsen.jpg",
+              "type": "topping",
+              "price": 55000
+            }
+          ],
+          "quantity": 5,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        }
+      ],
+      "idUser": "1",
+      "total": 0,
+      "date": "2024-04-07 18:52:42",
+      "status": "cart"
+    },
+    {
+      "id": "4135",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "7",
+              "name": "Đào Miếng",
+              "image": "daomieng.jpg",
+              "type": "topping",
+              "price": 55000
+            }
+          ],
+          "quantity": 3,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        },
+        {
+          "topping": [],
+          "quantity": 1,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        }
+      ],
+      "idUser": "2",
+      "total": 0,
+      "date": "2024-04-08 09:45:53",
+      "status": "cart"
+    },
+    {
+      "id": "0c82",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "872",
+              "name": "Trân châu trắng",
+              "image": "tranchau.jpg",
+              "type": "topping",
+              "price": "75000",
+              "topping": [],
+              "quantity": 0
+            },
+            {
+              "id": "123",
+              "name": "Hạt sen",
+              "image": "hatsen.jpg",
+              "type": "topping",
+              "price": 55000
+            },
+            {
+              "id": "7",
+              "name": "Đào Miếng",
+              "image": "daomieng.jpg",
+              "type": "topping",
+              "price": 55000
+            }
+          ],
+          "quantity": 6,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        }
+      ],
+      "idUser": "bbc3",
+      "total": 4.140004500033001e+21,
+      "date": "2024-04-08 11:06:26",
+      "status": "order"
+    },
+    {
+      "id": "d0a7",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "872",
+              "name": "adsadsa",
+              "image": "tranchau.jpg",
+              "type": "topping",
+              "price": "75000",
+              "topping": [],
+              "quantity": 0
+            },
+            {
+              "id": "123",
+              "name": "Hạt sen",
+              "image": "hatsen.jpg",
+              "type": "topping",
+              "price": 55000
+            },
+            {
+              "id": "6",
+              "name": "Thạch Cà Phê ",
+              "image": "caphe.jpg",
+              "type": "topping",
+              "price": 55000
+            }
+          ],
+          "quantity": 2,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        },
+        {
+          "topping": [],
+          "quantity": 6,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "drink",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "834"
+        }
+      ],
+      "idUser": "bbc3",
+      "total": 0,
+      "date": "2024-04-08 11:08:41",
+      "status": "cart"
+    }
+  ]
+}

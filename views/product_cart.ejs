@@ -1,0 +1,55 @@
+
+<%- include('./templates/header.ejs') %>
+
+
+<table border="1">
+    <h1>GIỎ HÀNG</h1>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Sản phẩm </th>
+            <th>Giá</th>
+            <th>Số Lượng</th>
+            <th>Thành Tiền</th>
+            <th>Thao Tác</th>
+            <th>Đặt Hàng </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% let i =0; let tongTien =0;  cart.products.forEach(sp => { %>
+            <tr>
+                <td><%= i+1 %></td>
+                <td>
+                <img src="../public/img/<%=sp.image %>" alt="" width="50px">
+               <strong><%=sp.name %> </strong> <br>
+              <% let gia = sp.price; sp.topping.forEach(tp =>{ %>
+                <p> + <%=tp.name %></p>
+              <% gia += tp.price; }); tongTien += sp.quantity * gia %>
+                </td>
+                <td><%= gia %>
+                    
+                </td>
+                <td><%=sp.quantity %>
+                    <a href="/product_cart/<%=i%>/down">-</a>
+                    <a href="/product_cart/<%=i%>/up">+</a></td>
+               
+                <td><%=sp.quantity*gia %></td>
+                <td><a href="/product_cart/<%=i%>/delete">Xóa</a></td>
+                <td><a href="/product_cart/checkout">Đặt Hàng  </a></td>
+         
+            </tr>
+       <% i++; }) %>  
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">tổng tiền</th>
+            <th><%= tongTien %></th>
+            <th><a href="/product_cart/delete">delete all</a></th>
+           
+        </tr>
+        
+    </tfoot>
+    
+</table>
+
+<!-- <%- include('./templates/footer') %>    -->

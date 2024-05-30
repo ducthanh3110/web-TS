@@ -1,0 +1,18 @@
+<%- include('./templates/header.ejs') %>
+
+
+<div class="LOGIN">
+    <div style="color: red;">
+        <%= message %>
+        </div>
+        
+        <form action="" method="post">
+            <h1>Đăng Ký</h1>
+            <input type="text" name="name" placeholder="your name "> <br>
+            <input type="email" name="email" placeholder="Email "> <br>
+            <input type="password" name="password" placeholder="password"> <br>
+            <input type="password" name="password2" placeholder="nhập lại mật khẩu vừa tạo"> <br>
+            <button type="submit">submit</button>
+        </form>
+</div>
+<%- include('./templates/footer') %>

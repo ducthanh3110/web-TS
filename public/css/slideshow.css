@@ -1,0 +1,31 @@
+#slideshow img {
+    margin-top:20px ;
+   width: 700px ;
+   height: 400px;
+    object-fit: cover;
+    margin-left: 400px;
+  
+}
+#slideshow .left {
+    color: yellow;
+    position: absolute;
+    top: 380px;
+    left: 400px;
+    font-size : 50px;
+}
+#slideshow .right {
+    color:yellow;
+    position: absolute;
+    top: 380px;
+    right: 400px;
+    font-size : 50px;
+}
+
+
+
+
+
+
+
+
+
